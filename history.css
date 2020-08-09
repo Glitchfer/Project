@@ -1,0 +1,876 @@
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Book'), url('AirbnbCerealBook.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Medium'), url('AirbnbCerealMedium.woff') format('woff');
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/*  Header    */
+.header-one {
+    text-align: center;
+    padding: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* .title {} */
+
+.judul {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.bar {
+    position: relative;
+    height: 50px;
+    left: 3px;
+}
+
+
+div.bar {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-img {
+    width: 30px;
+    height: 30px;
+    background-image: url(gambar/3bar.png);
+    background-size: cover;
+}
+
+/* sided & main*/
+.side-left {
+    /* border: 1px solid black; */
+    padding: 0;
+    height: 755px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.col-md-1 {
+    width: 50px;
+
+}
+
+.mid {
+    padding: 20px 30px;
+    height: 800px;
+    background-color: rgba(190, 195, 202, 0.3);
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, .2);
+    display: grid;
+    grid-template-areas:
+        "todays-income orders years-income"
+        "revenue-graph revenue-graph revenue-graph"
+        "recent-order recent-order recent-order"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 3fr 1fr;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+/* --/////////////////////////////////////---------Side-Left------------------//////////////////////////////////////////--- */
+div.navi-img {
+    height: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
+}
+
+.fork-img {
+    width: 35px;
+    height: 35px;
+    background-image: url(gambar/fork2.png);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+}
+
+.history-img {
+    width: 35px;
+    height: 35px;
+    background-image: url(gambar/clip.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.add-img {
+    width: 35px;
+    height: 35px;
+    background-image: url(gambar/add2.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* ////////////////////////--grafik--////////////////////////////////// */
+
+/* ////////////////////////--Grid--////////////////////////////////// */
+.card-label {
+    display: none;
+}
+
+.card-satu {
+    position: relative;
+    grid-area: todays-income;
+    padding: 95px 0;
+}
+
+.card-dua {
+    position: relative;
+    grid-area: orders;
+    padding: 95px 0;
+}
+
+.card-tiga {
+    position: relative;
+    grid-area: years-income;
+    padding: 95px 0;
+}
+
+.revenue {
+    position: relative;
+    grid-area: revenue-graph;
+    padding: 120px 0;
+}
+
+.recent-order {
+    position: relative;
+    grid-area: recent-order;
+    padding: 95px 0;
+}
+
+/* ////////////////////////--Main-Content-Orders--////////////////////////////////// */
+.todays-income {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+    border-radius: 10px;
+}
+
+.orders {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+    border-radius: 10px;
+}
+
+.years-income {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+    border-radius: 10px;
+}
+
+.revenue-graph {
+    width: 96.78%;
+    height: 94%;
+    position: absolute;
+    top: 4%;
+    left: 1.65%;
+    border-radius: 7px;
+    box-shadow: 7px 7px 20px rgba(43, 43, 43, 0.199);
+}
+
+.order-table {
+    width: 96.78%;
+    height: 94%;
+    position: absolute;
+    top: 6%;
+    left: 1.65%;
+    border-radius: 7px;
+    box-shadow: 7px 7px 20px rgba(43, 43, 43, 0.199);
+}
+
+.card-text {
+    position: relative;
+    margin: 55px 0;
+}
+
+.card-text p {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    font-size: 10px;
+    font-family: "Airbnb Cereal App Medium", serif;
+    padding: 0 20px;
+}
+
+.card-text h3 {
+    margin: 5px 0;
+    width: 100%;
+    position: relative;
+    font-size: 25px;
+    font-family: "Airbnb Cereal App Medium", serif;
+    padding: 0 20px;
+}
+
+.fractale1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(240, 248, 255, 0.17);
+    border-radius: 50%;
+    right: 78px;
+    top: 46px;
+}
+
+.fractale2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(240, 248, 255, 0.17);
+    border-radius: 50%;
+    right: 36px;
+    top: 26px;
+}
+
+.fractale3 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(240, 248, 255, 0.17);
+    border-radius: 50%;
+    right: 10px;
+    top: 13px;
+}
+
+/* //////////////////////////////////////////////////--line Chart--////////////////////////////////////////////////// */
+
+.line-chart canvas {
+    position: relative;
+    width: 95% !important;
+    height: 250px !important;
+    top: 65px;
+    left: 15px;
+}
+
+.revenue-graph h3 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 20px;
+    font-family: "Airbnb Cereal App Medium", serif;
+}
+
+.legend {
+    position: relative;
+    margin: 0px auto;
+    width: 150px;
+    height: 45px;
+    bottom: -50px;
+}
+
+.lgd1 {
+    width: 10px;
+    height: 10px;
+    background-color: #00F1FF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+
+}
+
+.lgd2 {
+    width: 10px;
+    height: 10px;
+    background-color: #FFB8C6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 55px;
+}
+
+.revenue-graph p:nth-of-type(1) {
+    width: 70px;
+    position: absolute;
+    font-size: 10px;
+    font-family: "Airbnb Cereal App Medium", serif;
+    text-align: right;
+    left: -5px;
+    top: 23px;
+}
+
+.revenue-graph p:nth-of-type(2) {
+    width: 70px;
+    position: absolute;
+    font-size: 10px;
+    font-family: "Airbnb Cereal App Medium", serif;
+    text-align: right;
+    right: 5px;
+    top: 23px;
+}
+
+.drp {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    top: -275px;
+    left: 0;
+
+}
+
+.dropdown button {
+    position: absolute;
+    padding: 0;
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(216, 212, 212);
+    color: black;
+    border-radius: 6px;
+    top: 10px;
+    right: 5%;
+}
+
+/* //////////////////////////////////////////////////--Recent-order-table--////////////////////////////////////////////////// */
+.tbl-up {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.tbl-up h3 {
+    position: relative;
+    font-size: 20px;
+    font-family: "Airbnb Cereal App Medium", sans-serif;
+    top: 10px;
+    padding-left: 10px;
+}
+
+.tbl-up .drp {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-right: 50px;
+
+}
+
+.tbl-up .dropdown button {
+    position: absolute;
+    padding: 0;
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(216, 212, 212);
+    color: black;
+    border-radius: 6px;
+    top: -20px;
+    right: 0;
+}
+
+.tbl-down {
+    position: relative;
+    width: 100%;
+    height: 128px;
+    font-size: 15px;
+    font-family: "Airbnb Cereal App Medium", sans-serif;
+    top: 10px;
+}
+
+.tbl-down tr {
+    height: 15px;
+}
+
+.tbl-down td:nth-of-type(1),
+.tbl-down td:nth-of-type(2),
+.tbl-down td:nth-of-type(3),
+.tbl-down td:nth-of-type(4),
+.tbl-down td:nth-of-type(5) {
+    width: 215px;
+}
+
+.hd h6 {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    margin: auto 0;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.445);
+}
+
+.btm div p {
+    position: relative;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #cecece;
+    top: 15px;
+}
+
+.tbl-down table,
+.tbl-down td {
+    border-color: #cecece;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////--Responsive--////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 576px) {
+
+    /*////////////////////////-----Header-----////////////////  */
+    .header-one {
+        height: 50px;
+    }
+
+    .side-left {
+        display: none;
+    }
+
+
+    .judul {
+        color: white !important;
+        font-size: 30px;
+        text-shadow: 0 2px 3px black;
+    }
+
+    .bar {
+        height: 30px;
+        left: 5px;
+    }
+
+    .bar-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .bar-img:hover {
+        width: 20px;
+        height: 20px;
+    }
+
+    .judul:hover {
+        font-size: 25px;
+        text-shadow: 1px -1px 2px rgb(0, 0, 0);
+        cursor: default;
+    }
+
+    /*////////////////////////-----Navigation bottom-----////////////////  */
+    .kontainer-kosong {
+        position: fixed;
+        width: 99%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgba(77, 76, 76, 0.3);
+        background-color: rgba(255, 255, 255, 0.644);
+        box-shadow: -1px -2px 15px rgba(0, 0, 0, .2);
+        z-index: 1;
+        left: 2.5px;
+        bottom: 0px;
+    }
+
+    .garpu-img {
+        width: 30px;
+        height: 30px;
+        background-image: url(gambar/fork2.png);
+        background-size: cover;
+        position: absolute;
+        left: 45px;
+        top: 15%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .histori-img {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(gambar/clip.png);
+        background-size: cover;
+        position: relative;
+        top: 8px;
+        left: -3px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .plus-img {
+        width: 30px;
+        height: 30px;
+        background-image: url(gambar/add2.png);
+        background-size: cover;
+        position: absolute;
+        right: 46px;
+        top: 15%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .garpu-img:hover {
+        top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .histori-img:hover {
+        top: 11px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .plus-img:hover {
+        top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    /*///////////////////--Main Content Orders--///////////////////////////////// */
+    /*///////////////////--background--///////////////////////////////// */
+    .mid {
+        height: 600px;
+        padding: 20px 20px;
+        grid-template-areas: "label label label"
+            "revenue-graph revenue-graph revenue-graph"
+            "recent-order recent-order recent-order"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 5fr 1fr;
+        /* justify-content: center;
+    align-items: center; */
+
+    }
+
+    .card-satu,
+    .card-dua,
+    .card-tiga {
+        display: none;
+    }
+
+    /*///////////////////--main grid--///////////////////////////////// */
+    .card-label {
+        display: flex;
+        position: relative;
+        grid-area: label;
+        padding: 90px 0;
+    }
+
+    .todays-income,
+    .orders,
+    .years-income {
+        border: none;
+    }
+
+
+    /*///////////////////--main-Content--///////////////////////////////// */
+    /*///////////////////--Content1--///////////////////////////////// */
+
+    .revenue-graph {
+        height: 100%;
+        top: 7%;
+        left: 1.65%;
+    }
+
+    .order-table {
+        height: 55%;
+        top: 25%;
+    }
+
+
+
+    /*///////////////////--sub-Content--///////////////////////////////// */
+    .extra-card {
+        position: absolute;
+        width: 96.55%;
+        height: 90%;
+        top: 5%;
+        left: 2%;
+
+        display: grid;
+        grid-template-areas:
+            "todays-income show-card show-card"
+            "orders show-card show-card"
+            "years-income show-card show-card"
+        ;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    /*///////////////////--sub-grid--///////////////////////////////// */
+
+    .m {
+        grid-area: todays-income;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .n {
+        grid-area: orders;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .k {
+        grid-area: years-income;
+        padding: 20px 0;
+        position: relative;
+
+    }
+
+    .l {
+        grid-area: show-card;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    /*///////////////////--Content2--///////////////////////////////// */
+    .todays-income2 {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 4.75px;
+        left: 4px;
+        background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+        filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .orders2 {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 4.75px;
+        left: 4px;
+        background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+        filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .years-income2 {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 4.75px;
+        left: 4px;
+        background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+        filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .extra {
+        width: 95%;
+        height: 95%;
+        position: absolute;
+        top: 3.5px;
+        left: 6px;
+        background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+        filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+        border-radius: 10px;
+    }
+
+    .card-text {
+        margin: 8px 0;
+    }
+
+    .card-text p {
+        margin: 0;
+        font-size: 5px;
+        padding: 0 5px;
+    }
+
+    .card-text h3 {
+        margin: 2px 0;
+        font-size: 8px;
+        padding: 0 5px;
+    }
+
+    .k .card-text h3 {
+        margin: 3px 0;
+        font-size: 6px;
+        padding: 0 5px;
+    }
+
+    .l .card-text {
+        margin: 45px 0;
+    }
+
+    .l .card-text p {
+        font-size: 10px;
+        padding: 0 20px;
+    }
+
+    .l .card-text h3 {
+        margin: 5px 0;
+        font-size: 25px;
+        padding: 0 20px;
+    }
+
+    .fractale1 {
+        right: 108px;
+        top: 46px;
+    }
+
+    .fractale2 {
+        right: 66px;
+        top: 26px;
+    }
+
+    .fractale3 {
+        right: 40px;
+        top: 13px;
+    }
+
+    .todays-income2 .fractale1,
+    .orders2 .fractale1,
+    .years-income2 .fractale1 {
+        width: 10px;
+        height: 30px;
+        border-radius: 0 40% 40% 0;
+        background-color: rgba(255, 255, 255, 0.178);
+        right: 3px;
+        top: 6px;
+    }
+
+    /* ////////////////////////////////--Chart--//////////////////////////////////////////////////////////////////////// */
+
+
+    .lgd1 {
+        width: 8px;
+        height: 8px;
+        bottom: 12px;
+        left: 33.5px;
+    }
+
+    .lgd2 {
+        width: 8px;
+        height: 8px;
+        bottom: 12px;
+        right: 49px;
+    }
+
+    .revenue-graph p:nth-of-type(1) {
+        font-size: 8px;
+        font-weight: bold;
+        left: 10px;
+    }
+
+    .revenue-graph p:nth-of-type(2) {
+        font-size: 8px;
+        font-weight: bold;
+        right: 10px;
+    }
+
+    .legend {
+        top: 12px;
+    }
+
+    .line-chart canvas {
+        width: 95% !important;
+        height: 190px !important;
+        top: 35px;
+        left: 10px;
+    }
+
+    .revenue-graph h3 {
+        top: 10px;
+        left: 15px;
+        font-size: 15px;
+    }
+
+    .drp {
+        top: -230px;
+
+    }
+
+    .dropdown button {
+        width: 50px;
+        height: 16px;
+    }
+
+    /* ///////////////////////////////////////--Table order--////////////////////////////////////////////////////////////////// */
+
+    .tbl-up {
+        width: 100%;
+        height: 35px;
+    }
+
+    .tbl-up h3 {
+        font-size: 14px;
+        top: 8px;
+    }
+
+    .tbl-up .drp {
+        width: 100%;
+        top: 2px;
+        left: 30px;
+        padding-right: 50px;
+
+    }
+
+    .tbl-up .dropdown button {
+        font-size: 9px;
+        width: 50px;
+        height: 20px;
+    }
+
+    .tbl-down {
+        top: 1px;
+    }
+
+    .tbl-down tr {
+        height: 8px;
+    }
+
+    .tbl-down td:nth-of-type(1),
+    .tbl-down td:nth-of-type(2),
+    .tbl-down td:nth-of-type(3),
+    .tbl-down td:nth-of-type(4),
+    .tbl-down td:nth-of-type(5) {
+        width: 80px;
+    }
+
+    .hd h6 {
+        font-size: 8px;
+        margin: auto;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.445);
+    }
+
+    .btm div p {
+        height: 25px;
+        font-size: 9px;
+        top: 5px;
+    }
+}

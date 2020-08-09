@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Book'), url('AirbnbCerealBook.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Airbnb Cereal App Medium'), url('AirbnbCerealMedium.woff') format('woff');
+}
+
+/* ///////////////////--Link Setup--//////////////////////// */
+.beranda {
+    width: 30px;
+    height: 30px;
+    background-color: #f24f8b00;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+    top: -3px;
+    left: 20px;
+
+}
+
+.histo {
+    width: 30px;
+    height: 35px;
+    background-color: #01ff5600;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 2px;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.selected {
+    display: none;
+}
+
+/* ///////////////////////////////----Checkout Menu------//////////////////////////////////////////////////////////////////////////////////////// */
+
+.add-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.add-menu .blocking {
+    margin: 100px auto 0;
+    width: 550px;
+    height: 430px;
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+}
+
+/* ////////////////////////////////////////---Add item Form---///////////////////////////////////////////////////////////////////////////////// */
+
+.add-menu .blocking .form {
+    position: absolute;
+    margin-top: 10px;
+    width: 92%;
+    height: 320px;
+    left: 5%;
+}
+
+.add-menu form {
+    font-family: 'Airbnb Cereal App Medium', Arial, sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.add-menu table {
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+.add-menu td:nth-of-type(1) {
+    width: 125px;
+    height: 60px;
+}
+
+.add-menu td:nth-of-type(2) {
+    width: 385px;
+    height: 60px;
+}
+
+
+.add-menu tr:nth-of-type(1) {
+    position: relative;
+    font-weight: bolder;
+    font-size: 25px;
+    top: -20px;
+}
+
+.input-name input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 76, 76, 0.3);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, .3);
+}
+
+.input-img input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 76, 76, 0.3);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, .3);
+}
+
+.input-price input {
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 76, 76, 0.3);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, .3);
+}
+
+.input-category select {
+    position: relative;
+    width: 35%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(155, 117, 117, 0.3);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .3);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(gambar/arrowdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto, 100%;
+    background-position: right 10px top 50%, 0 0;
+}
+
+
+/* ////////////////////////////////////////---Button---///////////////////////////////////////////////////////////////////////////////// */
+
+.btn-gate3 {
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    right: 25px;
+    bottom: 20px;
+}
+
+.add-button {
+    position: relative;
+    width: 120px;
+    bottom: 0;
+    order: 2;
+}
+
+.add-button .button {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #57CAD5;
+    border-radius: 5px;
+}
+
+.cancel2-button {
+    margin-right: 15px;
+    position: relative;
+    width: 120px;
+    bottom: 0;
+    order: 1;
+}
+
+.cancel2-button .button {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #F24F8A;
+    border-radius: 5px;
+}
+
+.cancel2-button .button:hover,
+.cancel2-button .button:focus {
+    width: 98%;
+    height: 38px;
+}
+
+.add-button .button:hover,
+.add-button .button:focus {
+    width: 98%;
+    height: 38px;
+}
+
+/*///////////////////////////////---Responsive---////////////////////*/
+
+@media (max-width: 768px) {
+    .kontainer-extra {
+        display: none;
+    }
+
+    .trigger button {
+        position: fixed;
+        width: 20px;
+        height: 5px;
+        background-color: #83ff2500;
+        border: #38810000;
+        z-index: 40;
+        bottom: 24.6px;
+        right: 54px;
+    }
+
+    .kontainer-kosong {
+        z-index: 80;
+    }
+
+    .beranda {
+        width: 30px;
+        height: 30px;
+        background-color: #f24f8b00;
+        display: inline-block;
+        text-indent: -9999px;
+        position: absolute;
+        z-index: 5;
+        top: -3px;
+        left: 0px;
+
+    }
+
+    .histo {
+        width: 30px;
+        height: 35px;
+        background-color: #01ff5600;
+        display: inline-block;
+        text-indent: -9999px;
+        position: absolute;
+        z-index: 5;
+        top: 0px;
+        left: 2px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+
+    .add-menu .blocking {
+        width: 85%;
+        height: 350px;
+    }
+
+    /*///////////////////////////////---button---////////////////////*/
+    .btn-gate3 {
+        width: 190px;
+        height: 31.5px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .add-button {
+        height: 30px;
+        width: 90px;
+    }
+
+    .add-button .button {
+        font-size: 13px;
+        height: 30px;
+
+    }
+
+    .cancel2-button {
+        width: 90px;
+        margin-right: 10px;
+        height: 30px;
+    }
+
+    .cancel2-button .button {
+        font-size: 13px;
+        height: 30px;
+    }
+
+    /* ////////////////////////////////--Add menu--///////////////////////////////// */
+    .add-menu .blocking .form {
+        width: 93%;
+        height: 270px;
+        left: 3%;
+    }
+
+    .add-menu table {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 15px;
+    }
+
+    .add-menu td:nth-of-type(1) {
+        width: 100px;
+        height: 53.5px;
+    }
+
+    .add-menu td:nth-of-type(2) {
+        width: 241.5px;
+        height: 53.5px;
+    }
+
+
+    .add-menu tr:nth-of-type(1) {
+        position: relative;
+        font-weight: bolder;
+        font-size: 20px;
+        top: -15px;
+    }
+
+    .input-price input {
+        width: 70%;
+    }
+
+    .input-category select {
+        font-size: 14px;
+        width: 45%;
+    }
+}
