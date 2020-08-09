@@ -12,6 +12,44 @@
     src: local('Airbnb Cereal App Medium'), url('AirbnbCerealMedium.woff') format('woff');
 }
 
+/* ///////////////////--Link Setup--//////////////////////// */
+.beranda {
+    width: 30px;
+    height: 30px;
+    background-color: #f24f8b00;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+    top: -3px;
+    left: 20px;
+
+}
+
+.histo {
+    width: 30px;
+    height: 35px;
+    background-color: #01ff5600;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 2px;
+}
+
+.menuhome {
+    width: 30px;
+    height: 35px;
+    background-color: #01ff5600;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 2px;
+}
+
+
 /* ///////////////////////////////----Checkout Menu------//////////////////////////////////////////////////////////////////////////////////////// */
 
 .checkout-menu {
@@ -152,8 +190,24 @@ td {
     cursor: pointer;
 }
 
+.trigger button {
+    display: none;
+}
+
 /*///////////////////////////////---Responsive---////////////////////*/
 @media (max-width: 768px) {
+    .trigger button {
+        display: block;
+        position: fixed;
+        width: 20px;
+        height: 5px;
+        background-color: #83ff2500;
+        border: #38810000;
+        z-index: 80;
+        bottom: 24.6px;
+        right: 54px;
+    }
+
     .side-right {
         display: flex;
     }

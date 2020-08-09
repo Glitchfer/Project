@@ -9,10 +9,10 @@
     <!-- BOOtstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="homeselect.css">
     <link rel="stylesheet" href="checkout.css">
-    <link rel="stylesheet" href="adddata.css">
+    <link rel="stylesheet" href="adddata.css"> -->
     <link rel="stylesheet" href="history.css">
 
     <!-- @font-face {
@@ -37,7 +37,9 @@
         <div class="slot-one row">
             <header class="header-one col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="bar col-1 col-sm-1 col-md-1 col-lg-1">
-                    <div class="bar-img"></div>
+                    <div class="bar-img">
+                        <a href="checkout.html" class="beranda" target="_blank"></a>
+                    </div>
                 </div>
                 <div class="title col-11 col-sm-11 col-md-11 col-lg-11">
                     <h1 class="judul">History</h1>
@@ -48,9 +50,13 @@
         <div class="slot-two row">
             <aside class="side-left col-1 col-sm-1 col-md-1 col-lg-1">
                 <div class="navi-img col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="fork-img"></div>
-                    <div class="history-img"></div>
-                    <div class="add-img"></div>
+                    <div class="fork-img">
+                        <a href="adddata.html" class="menuhome" target="_blank"></a>
+                    </div>
+                    <div class="history-img">
+                        <a href="history.html" class="histo" target="_blank"></a>
+                    </div>
+                    <div id="addclk" class="add-img"></div>
                 </div>
             </aside>
             <!-- ----//////////////////////////////------Graph menu-------////////////////////////////////////////////////////////////---------------- -->
@@ -245,19 +251,82 @@
         </div>
         <div class="kontainer-kosong">
             <div class="dummy1">
-                <div class="garpu-img"></div>
-                <div class="histori-img"></div>
+                <div class="garpu-img">
+                    <a href="adddata.html" class="menuhome" target="_blank"></a>
+                </div>
+                <div class="histori-img">
+                    <a href="history.html" class="histo" target="_blank"></a>
+                </div>
                 <div class="plus-img"></div>
+            </div>
+        </div>
+        <div class="trigger">
+            <button id="addClick"></button>
+        </div>
+    </div>
+    <!-- -----///////////////////////////////------Add Data menu-----//////////////////////////////////////////////////////////////////----------- -->
+    <div id="addModal" class=" add-menu modal">
+        <div class="blocking">
+            <div class="form">
+                <form action="">
+                    <table border="0">
+                        <tr>
+                            <td colspan="2">Add Item</td>
+                        </tr>
+                        <tr>
+                            <td><label for="name-list">Name</label></td>
+                            <td>
+                                <div class="input-name">
+                                    <input type="text" name="" id="name-list">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Image</label></td>
+                            <td>
+                                <div class="input-img">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="input-price">Price</label></td>
+                            <td>
+                                <div class="input-price">
+                                    <input type="text" name="" id="input-price">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="input-ctgr">Category</label></td>
+                            <td>
+                                <div class="input-category">
+                                    <select name="" id="">
+                                        <option value="">Category</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class=" btn-gate3">
+                <div class="add-button">
+                    <button class="button">Add</button>
+                </div>
+                <div class="cancel2-button">
+                    <button class="button canc">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
 
 
 
-
-    <script src="../../Plugin/Charts/Chart.js"></script>
+    <script src="checkoutmodal.js"></script>
+    <script src="modal1.js"></script>
+    <script src="../../../Plugin/Charts/Chart.js"></script>
     <script src="script.js"></script>
-
     <!--Bootstrap Javascript  -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

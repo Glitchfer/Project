@@ -39,6 +39,17 @@
 
 }
 
+.menuhome {
+    width: 30px;
+    height: 35px;
+    background-color: #01ff5600;
+    display: inline-block;
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 2px;
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////// */
 .selected {
     display: none;
@@ -204,6 +215,10 @@
     height: 38px;
 }
 
+.trigger button {
+    display: none;
+}
+
 /*///////////////////////////////---Responsive---////////////////////*/
 
 @media (max-width: 768px) {
@@ -212,12 +227,13 @@
     }
 
     .trigger button {
+        display: block;
         position: fixed;
         width: 20px;
         height: 5px;
         background-color: #83ff2500;
         border: #38810000;
-        z-index: 40;
+        z-index: 80;
         bottom: 24.6px;
         right: 54px;
     }
