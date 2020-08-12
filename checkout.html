@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="homeselect.css">
     <link rel="stylesheet" href="checkout.css">
-    <!-- <link rel="stylesheet" href="adddata.css"> -->
+    <link rel="stylesheet" href="adddata.css">
+    <!-- <link rel="stylesheet" href="history.css"> -->
 
     <style>
 
@@ -29,7 +30,7 @@
                 <div class="pocket1 row col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="bar col-1 col-sm-1 col-md-1 col-lg-1">
                         <div class="bar-img">
-                            <a href="checkout.html" class="beranda" target="_blank"></a>
+                            <a href="index.html" class="beranda" target="_self"></a>
                         </div>
                     </div>
                     <div class="title col-10 col-sm-10 col-md-10 col-lg-10">
@@ -43,7 +44,8 @@
             <header class="header-cart col-0 col-sm-0 col-md-3 col-lg-4 ">
                 <div class="pocket1 row col-12 col-sm-12 col-md-12 col-lg-12 ">
                     <div class="cart col-12 col-sm-12 col-md-12 col-lg-12">
-                        <h3 class="cart">Cart <span class="badge badge-pill badge-info">3</span></h3>
+                        <h3 class="cart">Cart <span class="badge badge-pill badge-info">0</span>
+                        </h3>
                     </div>
                 </div>
             </header>
@@ -56,10 +58,10 @@
             <aside class="side-left col-0 col-sm-0 col-md-1 col-lg-1">
                 <div class="navi-img">
                     <div class="fork-img">
-                        <a href="index.html" class="menuhome" target="_blank"></a>
+                        <a href="checkout.html" class="menuhome" target="_self"></a>
                     </div>
                     <div class="history-img">
-                        <a href="history.html" class="histo" target="_blank"></a>
+                        <a href="history.html" class="histo" target="_self"></a>
                     </div>
                     <div id="addclk" class="add-img"></div>
                 </div>
@@ -135,6 +137,14 @@
             <!-- -----//////////////////////////////////////////////////////------right sidebar-----//////////////////////////////////////////////////////////////////----------- -->
             <!-- -----//////////////////////////////////////////////////////------Wishlist-----//////////////////////////////////////////////////////////////////----------- -->
             <aside class="side-right col-5 col-sm-5 col-md-3 col-lg-4">
+                <!-- //////////////////////////////////-----Empty cart----////////////////////////////////////// -->
+                <div class="mascot col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="mascot-img">
+                    </div>
+                    <h1 class="empty">Your cart is empty</h1>
+                    <h6>Please add some item from the menu</h6>
+                </div>
+                <!-- //////////////////////////////////-----Filled cart----////////////////////////////////////// -->
                 <div class="wishlist">
                     <div class="list">
                         <div class="no_1">
@@ -210,7 +220,7 @@
                         <div class="check-button">
                             <button id="checkout" class="button">Checkout</button>
                         </div>
-                        <div class="cancel-button">
+                        <div class="cancel-button cancelBtn">
                             <button class="button">Cancel</button>
                         </div>
                     </div>
@@ -280,10 +290,10 @@
         <div class="kontainer-kosong">
             <div class="dummy1">
                 <div class="garpu-img">
-                    <a href="index.html" class="menuhome" target="_blank"></a>
+                    <a href="checkout.html" class="menuhome" target="_self"></a>
                 </div>
                 <div class="histori-img">
-                    <a href="history.html" class="histo" target="_blank"></a>
+                    <a href="history.html" class="histo" target="_self"></a>
                 </div>
                 <div class="plus-img"></div>
             </div>
@@ -311,7 +321,7 @@
         </div>
     </div>
     <!-- -----///////////////////////////////------Add Data menu-----//////////////////////////////////////////////////////////////////----------- -->
-    <!-- <div id="addModal" class=" add-menu modal">
+    <div id="addModal" class=" add-menu modal">
         <div class="blocking">
             <div class="form">
                 <form action="">
@@ -365,7 +375,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
 
@@ -377,8 +387,9 @@
 
     <script src="checkoutmodal.js"></script>
     <script src="modal1.js"></script>
-    <script src="../../Plugin/Charts/Chart.js"></script>
+    <script src="Charts/Chart.js"></script>
     <script src="script.js"></script>
+    <script src="hidecart.js"></script>
     <!--Bootstrap Javascript  -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

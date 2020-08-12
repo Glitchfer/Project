@@ -51,9 +51,9 @@
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////// */
-.selected {
+/* .selected {
     display: none;
-}
+} */
 
 /* ///////////////////////////////----Checkout Menu------//////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -64,7 +64,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 15;
 }
 
 .add-menu .blocking {
@@ -222,9 +222,9 @@
 /*///////////////////////////////---Responsive---////////////////////*/
 
 @media (max-width: 768px) {
-    .kontainer-extra {
+    /* .kontainer-extra {
         display: none;
-    }
+    } */
 
     .trigger button {
         display: block;
@@ -233,13 +233,13 @@
         height: 5px;
         background-color: #83ff2500;
         border: #38810000;
-        z-index: 80;
+        z-index: 10;
         bottom: 24.6px;
         right: 54px;
     }
 
     .kontainer-kosong {
-        z-index: 80;
+        z-index: 10;
     }
 
     .beranda {
@@ -275,6 +275,7 @@
     .add-menu .blocking {
         width: 85%;
         height: 350px;
+
     }
 
     /*///////////////////////////////---button---////////////////////*/

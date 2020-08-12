@@ -16,6 +16,10 @@
     display: none;
 }
 
+#checkoutModal {
+    display: none;
+}
+
 /* //////////////////////////------Button------//////////////////////////////////////////////////////////////////////////////////////////// */
 /*<--------------------------------------start--------default buttun for all*/
 .button {
@@ -241,7 +245,7 @@ h5.harga {
     height: 100%;
     position: absolute;
     border-radius: 5px 5px 0 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .ceklis {
@@ -251,7 +255,7 @@ h5.harga {
     background-image: url(gambar/ceklist.png);
     background-size: cover;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 /*/////////////////////----------end-------------////////////////////////////////////////////////////////////  */

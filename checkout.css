@@ -49,6 +49,10 @@
     left: 2px;
 }
 
+/* Disable some item */
+/* .mascot {
+    display: none;
+} */
 
 /* ///////////////////////////////----Checkout Menu------//////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -214,7 +218,7 @@ td {
 
     .wishlist,
     .text-total {
-        display: none;
+        display: none !important;
     }
 
     .btn-gate {
@@ -245,8 +249,7 @@ td {
         position: absolute;
         /* margin: -1400px 0; */
         border: 1px solid rgb(9, 255, 0);
-        overflow: none !important;
-        top: -1023px;
+        top: -1095px;
         left: 25px;
     }
 
