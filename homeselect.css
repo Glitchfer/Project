@@ -246,14 +246,20 @@ h5.harga {
     position: absolute;
     border-radius: 5px 5px 0 0;
     z-index: 1;
+    display: block;
+}
+
+.dark {
+    display: none;
 }
 
 .ceklis {
-    margin: 20% auto;
+    margin: 45px auto;
     width: 50px;
     height: 50px;
     background-image: url(gambar/ceklist.png);
     background-size: cover;
+    background-repeat: round;
     position: relative;
     z-index: 2;
 }

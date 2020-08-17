@@ -1,7 +1,9 @@
-const msct = document.getElementsByClassName("mascot")[0]; //<--- jika get by classname diikuti indexnya
+const msct = document.getElementsByClassName("mascot")[0]; //<--- jika get by classname harus disertakan indexnya
 const wish = document.getElementsByClassName("wishlist")[0];
 const chkot = document.getElementsByClassName("checkout")[0];
 const selected = document.getElementsByClassName("selected");
+let pick = document.getElementsByClassName("a1");
+
 
 //1. cari class HTML yang isinya akan berubah kapanpun, dan masukkan dalam sebuah variabel
 const badge = document.getElementsByClassName("badge-info")[0];
@@ -53,16 +55,35 @@ cancel.onclick = function () {
 
     chkot.style.display = "none";
 
-    // struktur looping buat cek display selected none / bukan
-    // var indexList = [];
-
-    // for (nilaiAwal = 0; nilaiAwal <= filtAkhir - 1; nilaiAwal++) {
-
-    //     indexList[nilaiAwal] = saring[nilaiAwal];
-    // }
-
-    selected[0].style.display = "none";
-    selected[1].style.display = "none";
-    selected[2].style.display = "none";
+    // nonaktifkan semua ceklis
+    for (let i = 0; i <= cartCount - 1; i++) {
+        selected[i].style.display = "none";
+    }
     badge.innerHTML = 0;
 }
+
+
+////////////////////////////////////////////////////////////////////////
+// menampilkan ceklis dan menghilangkan ceklis ketika menu dipencet
+// note.1; 
+// hal-hal yg belum dapat dilakukan:
+// 1.mengembalikan menu yang dipilih/ tidak jadi dipilih menjadi sebuah angka
+// 2.if menu dipilih maka cart +1, if menu tidak jadi dipilih maka cart -1
+// note.2;
+// menggunakan metode ini tidak berfungsi ketika tombol cancel ditekan ataupun
+// menu wishlist & checkout terlebihdahulu di hilangkan 
+const select = document.querySelectorAll('.selected')
+for (let y = 0; y <= cartCount - 1; y++) {
+    select[y].classList.add('dark')
+}
+const sel = document.querySelectorAll('.dark')
+for (let x = 0; x <= cartCount - 1; x++) {
+
+    pick[x].onclick = function () {
+        sel[x].classList.toggle('dark');
+    }
+}
+
+// // cara untuk cek value css
+// console.log(selected[0].style.display === "");
+// // alert(typeof selected[0].style.display)
